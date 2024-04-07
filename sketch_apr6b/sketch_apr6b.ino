@@ -28,8 +28,8 @@ void loop() {
   int xValue = analogRead(PIN_ANALOG_X);
   int yValue = analogRead(PIN_ANALOG_Y);
 
-  int mappedX = map(xValue, 0, 1023, -1, 1);
-  int mappedY = map(yValue, 0, 1012, -1, 1);
+  int mappedX = map(xValue, 0, 968, -1, 1);
+  int mappedY = map(yValue, 0, 1014, 1, -1);
 
   Serial.print(mappedX);
   Serial.print(",");
